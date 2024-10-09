@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<!--initial-->
 <html lang="en">
-  <!--initial-->
   <head>
-    <!--initial-->
     <meta charset="UTF-8" />
-    <!--initial-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--initial-->
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Berestyanaya Gramota</title>
-    <!--doc title-->
   </head>
   <!--initial-->
   <body class="css-selector">
     <nav class="navbar open">
+      <video class = "background-video" autoplay muted loop id="background-video">
+        <source src="./src/public/background.mp4" type="video/mp4">
+      </video>
+
       <img src="./src/public/Logo.jpg" width="60" height="60" alt="logo" />
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -40,28 +38,27 @@
         </div>
       </div>
     </nav>
-    <main class="container" ; class="css-selector">
-      <!--уточнить-->
+    <main class="container">
       <div class="person">
-        <p>Name: Dobrynya</p>
-        <p>Age: 33</p>
-        <p>Birthplace: Ancient Rus'</p>
-        <p>Profession: witcher</p>
-        <p>Ethnicity: ancient slavic</p>
+        <p class="center">Name: Dobrynya</p>
+        <p class="center">Age: 33</p>
+        <p class="center">Birthplace: Ancient Rus'</p>
+        <p class="center">Profession: witcher</p>
+        <p class="center">Ethnicity: ancient slavic</p>
       </div>
-      <img src="./src/public/Photo.jpg" width="600" height="400" alt="Photo" />
+      <img src="./src/public/Photo.jpg" width="1024" height="1024" alt="Photo" />
       <div class="interests">
-        <p>Interests: killing monstres</p>
-        <p>Hobbies: killing monstres</p>
-        <p>Lifeviews: traditional</p>
-        <p>
+        <p class="center">Interests: killing monsters</p>
+        <p class="center">Hobbies: killing monsters</p>
+        <p class="center">Life views: traditional</p>
+        <p class="center">
           Credo: Evil is Evil. Lesser, greater, middling... Makes no difference
         </p>
       </div>
 
       <section>
-        <h2>Essay</h2>
-        <p>
+        <h2 class="center">Essay</h2>
+        <p class="center">
           Evil is evil. Lesser, greater, middling, it’s all the same.
           Proportions are negotiated, boundaries blurred. I’m not a pious
           hermit; I haven’t done only good in my life. But if I’m to choose
@@ -74,17 +71,16 @@
     </main>
     <footer>
       <a href="https://www.youtube.com"
-        ><img src="./src/public/youtube.jpg" width="40" height="40"
+      ><img src="./src/public/youtube.jpg" width="40" height="40"
       /></a>
       <a href="https://www.facebook.com"
-        ><img src="./src/public/facebook.jpg" width="40" height="40"
+      ><img src="./src/public/facebook.jpg" width="40" height="40"
       /></a>
       <a href="https://www.instagram.com"
-        ><img src="./src/public/instagram.jpg" width="40" height="40"
+      ><img src="./src/public/instagram.jpg" width="40" height="40"
       /></a>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src = "./js/script.js">
+    </script>
   </body>
-  <!--initial-->
 </html>
-<!--initial-->
