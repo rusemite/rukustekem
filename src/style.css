@@ -6,7 +6,9 @@
   position: relative;
   width: 100%;
   height: 60px; /* Adjust as needed */
+
 }
+
 
 .navbar ul {
   display: flex; /* Устанавливает контейнер ul как flex-контейнер для его дочерних элементов (li) */
@@ -15,37 +17,33 @@
   margin: 0; /* Убирает внешний отступ у списка */
 }
 
-.navbar ul li {
-  /* в целом на хоум видео и пр */
+.navbar ul li {/* в целом на хоум видео и пр */
   display: flex; /* Устанавливает каждый элемент списка (li) как flex-контейнер для его содержимого */
   margin-right: 10px; /* Добавляет отступ справа у каждого элемента списка */
 }
 
-.navbar ul li:hover {
-  /* цвет при наведении на хоум видео */
+.navbar ul li:hover {/* цвет при наведении на хоум видео */
   background-color: #c58815; /* Изменяет фоновый цвет элемента списка при наведении курсора */
   border-radius: 20%; /* Скругляет углы элемента списка при наведении курсора */
 }
 
-.navbar ul li a {
-  /* меняе хоум видео музик в навбаре */
+.navbar ul li a { /* меняе хоум видео музик в навбаре */
   text-decoration: none; /* Убирает подчеркивание у ссылок */
   color: black; /* Устанавливает цвет текста ссылок черным */
   margin: auto; /* Центрирует текст внутри элемента списка */
 }
 
-.navbar div {
-  /* меняет Entry в ску */
+.navbar div {/* меняет Entry в ску */
   display: flex; /* Устанавливает div как flex-контейнер */
   margin-right: 20px; /* Добавляет отступ справа у div */
 }
 
-.navbar div a {
-  /* меняет Entry в ску */
+.navbar div a {/* меняет Entry в ску */
   text-decoration: none; /* Убирает подчеркивание у ссылок в div */
   color: black; /* Устанавливает цвет текста ссылок черным */
   margin: auto; /* Центрирует текст внутри div */
 }
+
 
 .container {
   /* Контейнер с элементами, использующий Flexbox для адаптивного размещения */
@@ -86,6 +84,7 @@ body {
 
 /* Фон для основного содержимого страницы */
 
+
 /* Стили для текста в параграфах */
 p {
   text-align: justify; /* Выравнивание текста по ширине */
@@ -94,11 +93,9 @@ p {
   margin-right: 20px;
   margin-left: 10px; /* Отступы по бокам */
 }
-
 .center {
   text-align: center;
 }
-
 /* Эффект при наведении на параграф */
 p:hover {
   background-color: #bb55ef; /* Синий фон при наведении */
@@ -223,14 +220,13 @@ footer a {
 
 @media (max-width: 700px) {
   /* При ширине экрана до 700px */
+
   .form form fieldset {
     width: 65%;
   }
-
   .math form fieldset {
     width: 70%;
   }
-
   .container {
     display: flex;
     flex-direction: column; /* Переключение на вертикальный макет */
@@ -314,7 +310,6 @@ footer a {
     margin-left: 20px; /* Отступ слева */
     margin-right: 5px; /* Отступ справа */
   }
-
   /* Стили для полосок внутри бургер-меню */
   .burger span {
     position: absolute; /* Абсолютное позиционирование для расположения полосок внутри контейнера */
@@ -358,14 +353,15 @@ footer a {
 
   /* Стили для элемента списка при наведении */
   .navbar ul li:hover {
+
     transform: scale(
-      1.07
+            1.07
     ); /* Увеличение размера элемента на 7% при наведении */
     transition: 0.4s ease; /* Плавный переход эффекта с продолжительностью 0.4 секунды */
     border-radius: 5%; /* Закругление углов элемента на 5% */
   }
-
   /* Стили для ссылок в элементах списка при наведении */
+
   /* Отступ сверху для первого элемента списка в навигационном меню */
   .navbar ul li:nth-child(1) {
     margin-top: 20px; /* Увеличение отступа сверху для первого элемента списка */
@@ -380,7 +376,7 @@ footer a {
   /* Стили для навигационного меню при открытом состоянии */
   .navbar.open ul {
     transform: translateX(
-      100%
+            100%
     ); /* Перемещение меню на 100% ширины вправо (выдвигается за пределы видимой области) */
     transition: 0.7s ease-in-out; /* Плавный переход эффекта с продолжительностью 0.7 секунды */
   }
@@ -400,6 +396,8 @@ footer a {
     transform: translateY(0) rotate(-180deg); /* Поворачивает третью полоску на -45 градусов и возвращает в исходное положение по вертикали */
   }
 }
+
+
 
 /*градиент*/
 
@@ -458,9 +456,9 @@ footer a {
 
 .navbar ul .work:hover ul li a {
   color: rgb(
-    0,
-    0,
-    0
+          0,
+          0,
+          0
   ); /* Set text color to black when hovering over the parent */
 }
 
@@ -507,34 +505,35 @@ footer a {
   color: rgb(158, 40, 40); /* Change the text color of the button on hover */
 }
 
+
+
+
+
 /*                                             5 неделя*/
-.math {
+.container {
   display: flex; /*more responsive to change*/
 }
-
-.math form {
+.container form {
   display: flex;
   flex-direction: column; /*vertical block*/
   margin: auto; /*form in center*/
   padding-top: 20px; /*space between top and content*/
   width: 100%; /*full of container*/
 }
-
-.math form fieldset {
+.container form fieldset{
   display: flex;
   flex-direction: column;
   width: 50%;
   margin: auto;
   margin-bottom: 30px; /*space between fieldset and element under it*/
-  color: #4dbbea;
+  color: #000000;
 }
-
-.math form fieldset legend {
+.container form fieldset legend{
   text-align: center; /*center text*/
   font-size: 1.2rem; /*size of text*/
 }
 
-.math form fieldset .counters {
+.container form fieldset .counters{
   display: flex;
   flex-direction: row; /*gorisontal row*/
   justify-content: center; /*center objects*/
@@ -542,59 +541,53 @@ footer a {
   margin-bottom: 20px; /*20 pixels space under counters*/
 }
 
-.math form fieldset .counters div {
+.container form fieldset .counters div {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin: auto;
 }
-
-.math form fieldset .counters div label,
-input {
+.container form fieldset .counters div label, input {
   margin: auto;
   text-align: center;
 }
 
-.math form fieldset .counters div input {
+.container form fieldset .counters div input {
   width: 70%;
   font-size: 1.1rem;
   color: #ea4da3;
 }
 
-.math form fieldset .butcont {
+.container form fieldset .butcont{
   display: flex;
   flex: row;
   width: 100%;
   margin-bottom: 20px;
-  color: #4dbbea;
+  color: #ea4d4d;
 }
 
-.math form fieldset .butcont button {
+.container form fieldset .butcont button {
   display: block; /*use all size of block*/
   width: 20%;
   box-sizing: border-box; /**/
   height: 40px; /*height for button*/
   margin: auto; /*horizontal center*/
 }
-
-.math form fieldset p {
+.container form fieldset p {
   display: flex;
   margin: 0; /*delete empty space*/
-  color: #4dbbea;
+  color: #000000;
 }
-
-.math form fieldset p span {
+.container form fieldset p span {
   margin: auto;
   font-size: 1.2rem;
 }
-
 @media (min-width: 700px) and (max-width: 900px) {
   /*уточн ть*/
   /* При ширине экрана от 700px до 900px */
   .form form fieldset {
     width: 80%;
   }
-
   .container img {
     margin-top: 20px; /* Отступ сверху для изображений */
     border-radius: 10%; /* Скругление углов изображений */
